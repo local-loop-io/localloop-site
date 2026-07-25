@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+- Static nginx now emits baseline security headers (`X-Content-Type-Options`,
+  `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`) on HTML and
+  mirrored markdown responses (agent cycle 002).
+
 ## [0.4.5] - 2026-07-19
 
 ### Fixed

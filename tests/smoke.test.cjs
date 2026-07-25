@@ -274,3 +274,16 @@ test('every canonical filesystem page owns title and correct canonical path meta
   assert.ok(rootLayout.includes('metadataBase'));
   assert.ok(!rootLayout.includes('createMetadata'));
 });
+
+test('nginx static server declares baseline security headers', () => {
+  const conf = read(['nginx.conf']);
+  assert.ok(conf.includes('X-Content-Type-Options'));
+  assert.ok(conf.includes('nosniff'));
+  assert.ok(conf.includes('X-Frame-Options'));
+  assert.ok(conf.includes('SAMEORIGIN'));
+  assert.ok(conf.includes('Referrer-Policy'));
+  assert.ok(conf.includes('strict-origin-when-cross-origin'));
+  assert.ok(conf.includes('Permissions-Policy'));
+  assert.ok(conf.includes('camera=()'));
+});
+
