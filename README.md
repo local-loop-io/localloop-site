@@ -2,6 +2,10 @@
 
 # localLOOP
 
+> [!IMPORTANT]
+> **Archived 2026-10-14.** localLOOP development has moved to a private monorepo and this repository is read-only.
+> The lab demo now lives at **https://loop.urbnia.com** (API under `/api/`); `localloop.urbnia.com` and `loop-api.urbnia.com` redirect there.
+
 **The official website of localLOOP and home of the LOOP protocol, MaterialDNA, ProductDNA, city portals, and governance.**
 
 [![Site](https://img.shields.io/badge/site-localloop.urbnia.com-4f46e5?logo=github)](https://localloop.urbnia.com)
